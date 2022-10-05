@@ -6,5 +6,5 @@ Requirements:
 
 To run tests manually:
 
-mvn test (out of folder where pom.xml is located)
+Execute `mvn test` (out of folder where pom.xml is located)
 
