@@ -17,8 +17,10 @@ public class App
     Scanner input = new Scanner( System.in);
     String problem = input.next();
     if(problem.equals("Exit") || problem.equals("exit") ) exit = true;
-    else if (errorChecking(problem) == true )
-      System.out.println("Calculate\n");
+    else if (errorChecking(problem) == true ){
+      Calculate calculate_obj = new Calculate(problem);
+      System.out.format("Result is: %d\n", calculate_obj.evaluate());
+    }
     else System.out.println("Do not Calculate\n");
   }
 
