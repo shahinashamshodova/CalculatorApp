@@ -4,7 +4,7 @@ import net.objecthunter.exp4j.*;
 public class Calculate {
     String expression;
     public Calculate(String expression){
-        this.expression = expression;
+        this.expression = expression.replaceAll("\\s", "");
     }
 
     public int evaluate(){
