@@ -19,5 +19,14 @@ public class CalculateTest {
 
         test_obj = new Calculate("50 - 10");
         assertEquals(40, test_obj.evaluate());
+
+        test_obj = new Calculate("-50 - 10");
+        assertEquals(-60, test_obj.evaluate());
+
+        test_obj = new Calculate("-50 * -10");
+        assertEquals(500, test_obj.evaluate());
+
+        test_obj = new Calculate("-50 / -2");
+        assertEquals(25, test_obj.evaluate());
     }
 }
